@@ -1,0 +1,162 @@
+@font-face {
+  font-family: Roboto;
+  src: url("./fonts/Roboto-Regular.ttf");
+}
+
+html {
+  background-color: #222;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+html,
+body {
+  margin: 0 auto;
+  height: 100%;
+}
+
+body {
+  font-size: var(--base-font-size);
+  font-family: Roboto, sans-serif;
+  padding: var(--vertical-padding) var(--horizontal-padding);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--section-gap);
+  max-width: var(--page-width);
+  max-height: var(--page-height);
+  overflow: scroll;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+p,
+li {
+  line-height: var(--line-height);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+section span {
+  display: block;
+}
+
+section>.content {
+  border-left: 2px dashed var(--border-color);
+  padding-left: 1.5rem;
+}
+
+section>.content.split {
+  display: flex;
+}
+
+ul {
+  margin: 0;
+  padding-left: 2ch;
+}
+
+li {
+  margin-bottom: 0;
+}
+
+.about {
+  align-self: center;
+}
+
+.introduction {
+  text-align: center;
+}
+
+.name {
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  font-size: var(--name-size);
+  margin-bottom: 0.4rem;
+}
+
+.name>.last-name {
+  display: inline;
+  font-weight: bolder;
+}
+
+.address {
+  font-size: 90%;
+  margin: 0 auto;
+}
+
+.contact {
+  color: var(--job-title-color);
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.contact span {
+  display: inline;
+}
+
+.contact span:not(:last-of-type)::after {
+  content: "•";
+  margin: 0 0.5ch;
+}
+
+.title {
+  font-size: var(--title-size);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: var(--title-margin);
+}
+
+.job-description:not(:last-of-type) {
+  margin-bottom: 0.2rem;
+}
+
+.date {
+  text-transform: uppercase;
+  color: var(--date-color);
+  font-weight: bold;
+  font-size: 90%;
+  font-family: monospace;
+}
+
+.date:not(:first-of-type) {
+  margin-top: 1rem;
+}
+
+.job-title {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: var(--job-title-color);
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.job-title span {
+  display: inline;
+}
+
+.job-company {
+  font-size: 90%;
+  color: var(--job-company-color);
+  font-weight: normal;
+}
+
+.projects-guidance {
+  align-self: center;
+}

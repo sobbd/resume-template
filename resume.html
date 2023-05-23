@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>John Doe</title>
+    <!-- Main styling configuration -->
+    <style>
+      :root {
+        /* Colors */
+        --text-color: #000;
+        --background-color: #fff;
+        --job-title-color: #21844f;
+        --job-company-color: rgb(65, 59, 59);
+        --border-color: rgb(34, 34, 34, 0.2);
+        --date-color: rgb(53, 53, 53);
+
+        /* Sizing, margins & paddings */
+        --page-width: 8.5in;
+        --page-height: 11in;
+        --horizontal-padding: 0.5in;
+        --vertical-padding: 0.5in;
+        --section-gap: 1rem;
+        --name-size: 2rem;
+        --title-size: 1.1rem;
+        --title-margin: 0.5rem;
+        --base-font-size: 18px;
+        --line-height: 150%;
+      }
+    </style>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Personal information -->
+    <section class="about">
+      <div class="name">John <span class="last-name">Doe</span></div>
+      <div class="address">
+        📍 Boca Raton, FL &bull; <a href="tel:5611234567">(561) 123-4567</a>
+      </div>
+      <div class="contact">
+        <span>
+          <a target="_blank" href="mailto:johndoe@email.com">
+            johndoe@email.com
+          </a>
+        </span>
+        <span>
+          <a target="_blank" href="https://www.linkedin.com/in/johndoe">
+            linkedin.com/in/johndoe
+          </a>
+        </span>
+        <span><a href="https://github.com/johndoe">github/johndoe</a></span>
+      </div>
+    </section>
+    <!-- Optional: Introduction -->
+    <!-- <section class="introduction">
+      <p>
+        Self-taught, dedicated software & full-stack web developer. Developed
+        and maintained <strong>over 50+</strong> professional business websites,
+        in one of the Inc. 500 fastest-growing private companies. Not afraid of
+        a challenge!
+      </p>
+    </section> -->
+    <!-- Education -->
+    <section>
+      <span class="title">Education</span>
+      <div class="content">
+        <!-- Bachelor's Degree -->
+        <span class="date">January 2022 &mdash; Expected May 2024</span>
+        <span class="job-title"
+          >Bachelor's Degree (Computer Science),
+          <span class="job-company">Florida Atlantic University</span></span
+        >
+        <p class="job-description">
+          Enrolled with a <strong>4.0/4.0 GPA</strong>. Relevant coursework
+          includes <strong>Data Structures &amp; Algorithms</strong>,
+          Foundations of Computer Science (C++), and Full-Stack web development,
+          among others.
+        </p>
+        <ul class="job-description">
+          <li>
+            <strong>Member</strong> of a Data structure and Algorithm club
+            focusing on Leetcode problems and algorithm study, consisting of
+            <strong>90+ members</strong>.
+          </li>
+        </ul>
+        <!-- Associate in Arts -->
+        <span class="date">September 2017 &mdash; May 2020</span>
+        <span class="job-title"
+          >Associate in Arts (Computer Science),
+          <span class="job-company">Palm Beach State College</span></span
+        >
+        <p class="job-description">
+          Graduated with a cumulative <strong>4.0/4.0 GPA</strong>. Member of
+          the <strong>Dr. Floyd F. Koch Honors College</strong>. Worked on
+          C-based Arduino projects, including a remotely controlled robot.
+        </p>
+      </div>
+    </section>
+    <!-- Experience -->
+    <section>
+      <span class="title">Experience</span>
+      <div class="content">
+        <!-- Full-Stack Web Developer (6 Months) -->
+        <span class="date">September 2019 &mdash; March 2020 (6 Months)</span>
+        <span class="job-title">
+          Full-Stack Web Developer,
+          <span class="job-company">
+            <a target="_blank" href="https://www.acme.com/">ACME Corp.</a>
+          </span>
+        </span>
+        <ul class="job-description">
+          <li>
+            Successfully completed over <i>1,000+</i> design and functionality
+            revisions requested by clients, including the design and
+            implementation of entire websites from scratch.
+          </li>
+          <li>
+            Employed proven SEO strategies such as keyword research &amp;
+            optimization, and on-page optimization to increase traffic and lead
+            conversion rate on some sites by more than ⇧34%.
+          </li>
+        </ul>
+        <!-- Web Team Intern (1 Month) -->
+        <span class="date">August 2019 (1 Month)</span>
+        <span class="job-title">
+          Web Team Intern,
+          <span class="job-company">
+            <a target="_blank" href="https://www.acme.com/">Acme</a>
+          </span>
+        </span>
+        <ul class="job-description">
+          <li>
+            Used JavaScript, CSS &amp; WordPress to implement functionality to
+            existing projects, such as making use of Google Maps API,
+            communication with the backend via API calls, and rendering of data
+            on the frontend.
+          </li>
+          <li>
+            Maintained existing projects, ensuring that they are secure and
+            updated, by performing code reviews with focus on security
+            vulnerabilities such as SQL-injection.
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Skills -->
+    <section>
+      <span class="title">Skills</span>
+      <div class="content split">
+        <ul>
+          <li>Software development: <strong>Node.js, Rust, C++</strong>.</li>
+          <li>
+            Full-stack web development:
+            <strong>TypeScript</strong>, <strong>React.js</strong>,
+            <strong>Axios</strong>.
+          </li>
+          <li>
+            Understanding of version control systems and platforms, including
+            <strong>Git</strong> and GitHub.
+          </li>
+        </ul>
+        <ul>
+          <li>SQL-based and NoSQL (<strong>MongoDB</strong>) databases.</li>
+          <li>
+            Test-driven development (TDD) and various testing methods, such as
+            unit and end-to-end (E2E) tests.
+          </li>
+          <li>
+            Bilingual: Excellent communication skills in both English and
+            Spanish.
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Optional: Featured project -->
+    <!-- <section>
+      <span class="title">Featured Project</span>
+      <div class="content">
+        <p>
+          <strong
+            >Compiler written in
+            <a target="_blank" href="https://www.rust-lang.org/">
+              Rust</a
+            ></strong
+          >: Designed and implemented a compiler featuring type-inference,
+          parametric polymorphism, type classes, and more. Implemented all the
+          major phases from <i>scratch</i>, including a lexer, parser,
+          type-inference & semantic analysis phase, and a lowering phase using
+          the LLVM toolchain. Unit tests and E2E tests are used to maintain a
+          codebase of over 15,000 lines of code.
+        </p>
+      </div>
+    </section> -->
+    <!-- Optional: Note -->
+    <!-- <i class="projects-guidance">
+      View an extended list of projects &bull;
+      <a href="https://johndoe.dev">johndoe.dev</a>
+    </i> -->
+  </body>
+</html>
